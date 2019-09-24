@@ -81,7 +81,7 @@ button {
 }
 
 .form-control{
-    font-size: 15px;
+    font-size: 18px;
     min-height: 48px;
     font-weight: 500;
 }
@@ -92,7 +92,7 @@ button {
 }
 
 .forgot-link{
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .forgot-link label{
