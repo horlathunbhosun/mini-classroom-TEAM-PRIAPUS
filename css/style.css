@@ -110,21 +110,31 @@ a:hover {
     text-decoration: none;
     border-color: #fff;
 }
-/* 
-@media (max-width: 900px) {
-    .reg {
-        text-align: center;
-        margin-top: 70%;
-        color: #ffffff;
-        font-size: 10px;
-    }
-    h3 {
-    font-size: 20px;
-}
 
-    
-    button {
-        cursor: pointer;
-        /* width: 200px; */
-    
-        /*  */
+/* mobile veiw */
+@media (max-width: 575.98px) {
+    body {
+        background-color: #3F0E40;
+    }
+    .right-box {
+        width: 100%;
+    }
+    .left-box {
+        display: none;
+    }
+    .right-box {
+        background: #3F0E40;
+    }
+    .reg {
+        font-size: 25px;
+        padding-top: 20px;
+    }
+    .login-form {
+        padding-bottom: 30%;
+        height: 100%;
+        width: 100%;
+        margin-top: 20px;
+        background: #fff;
+    }
+
+}
