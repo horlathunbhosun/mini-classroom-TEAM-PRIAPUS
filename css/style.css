@@ -17,7 +17,6 @@ body
 }
 #login-box {
     position: relative;
-    /* margin: 5% auto; */
     height: 400px;
 
 }
@@ -37,21 +36,9 @@ body
 }
 .reg {
     text-align: center;
-    margin-top: 40%;
+    margin-top: 28%;
     color: #ffffff;   
 }
-button {
-    cursor: pointer;
-    width: 200px;
-    border-radius: 8px;
-    text-align: center;
-    font-family: 'Oxygen', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    color: #fff;
-}
-
 .mt-5 {
     color: #ffffff;
     font-size: 15px;
@@ -66,9 +53,8 @@ button {
     padding: 40px;
     width: 50%;
     height: 700px;
-    background: #ffffff;
-    border-radius: 20px;
-    font-family: Montserrat; 
+    background: #fff;
+    font-family: 'Oxygen', sans-serif; 
 }
 
 .login-container {
@@ -109,32 +95,22 @@ button {
 .login-form a:hover{
     color:#3F0E40;
 }
-
-.btn {
-    cursor: pointer;
-    width: 200px;
+.submit-btn {
     background: #3f0e40;
-    border-radius: 8px;
-    text-align: center;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 20px;
-    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    height: 37px;
+    width: 38%;
 }
-
-.mb-5 {
-    color: #3F0E40;
+a {
+    text-decoration: none;
+    color: #fff;
 }
-
-.btn-primary {
-    /* margin-bottom: 15px; */
+a:hover {
+    text-decoration: none;
+    border-color: #fff;
 }
-.btn-primary:hover {
-    color:#3f0e40;
-    background-color:#ffffff;
-    border-color: none;
-    margin-bottom: 15px;
-}
-
+/* 
 @media (max-width: 900px) {
     .reg {
         text-align: center;
@@ -151,210 +127,4 @@ button {
         cursor: pointer;
         /* width: 200px; */
     
-        background: #FFFFFF;
-        border-radius: 20px;
-        
-        /* SIGN UP */
-    
-        text-align: center;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        /* line-height: 6px; */
-        color: #3F0E40;
-    }
-    
-    .login-container {
-        margin-top: 45%;
-    }
-    
-    .login-form{
-        max-width: 100%;
-        width: 370px;
-        padding: 15px;
-        margin: auto;
-       
-    
-    }
-    
-    .form-control{
-        font-size: 15px;
-        min-height: 48px;
-        font-weight: 500;
-    }
-    
-    .form-control:focus{
-        border-color:#3F0E40;
-        box-shadow: 0 0 0 0.2rem rgba(114,61,190,.25);
-    }
-    
-    .forgot-link{
-        font-size: 13px;
-    }
-    
-    .forgot-link label{
-        margin-bottom: 0;
-    }
-    
-    .login-form a{
-        text-decoration: none;
-        color: #666666;
-    }
-    
-    .login-form a:hover{
-        color:#3F0E40;
-    }
-    
-    .btn {
-        cursor: pointer;
-        width: 200px;
-    
-        background: #3f0e40;
-        border-radius: 20px;
-    
-        text-align: center;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        
-        color: #ffffff;
-    }
-    
-    .mb-5 {
-        color: #3F0E40;
-        font-size: 20px;
-    }
-    .mt-5 {
-        color: #ffffff;
-        font-size: 15px;
-        width: 70%;
-    }
-    .btn-primary {
-        margin-bottom: 15px;
-    }
-    .btn-primary:hover {
-        color:#3f0e40;
-        background-color:#ffffff;
-        border-color:#ffffff;
-        margin-bottom: 15px;
-    }
-    
-}
-
-@media (max-width: 600px) {
-    .reg {
-        text-align: center;
-        margin-top: 90%;
-        color: #ffffff;
-        font-size: 10px;
-    }
-    h3 {
-    font-size: 15px;
-}
-
-    
-    button {
-        cursor: pointer;
-        /* width: 200px; */
-    
-        background: #FFFFFF;
-        border-radius: 20px;
-        
-        /* SIGN UP */
-    
-        text-align: center;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        /* line-height: 6px; */
-        color: #3F0E40;
-    }
-    
-    .login-container {
-        margin-top: 45%;
-    }
-    
-    .login-form{
-        max-width: 100%;
-        width: 370px;
-        padding: 15px;
-        margin: auto;
-       
-    
-    }
-    
-    .form-control{
-        font-size: 10px;
-        min-height: 48px;
-        font-weight: 500;
-    }
-    
-    .form-control:focus{
-        border-color:#3F0E40;
-        box-shadow: 0 0 0 0.2rem rgba(114,61,190,.25);
-    }
-    
-    .forgot-link{
-        font-size: 10px;
-    }
-    
-    .forgot-link label{
-        margin-bottom: 0;
-    }
-    
-    .login-form a{
-        text-decoration: none;
-        color: #666666;
-    }
-    
-    .login-form a:hover{
-        color:#3F0E40;
-    }
-    
-    .form-group{
-        margin-bottom: 5px;
-    }
-    .btn {
-        cursor: pointer;
-        width: 200px;
-    
-        background: #3f0e40;
-        border-radius: 20px;
-    
-        text-align: center;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        
-        color: #ffffff;
-    }
-    
-    .mb-5 {
-        color: #3F0E40;
-        font-size: 20px;
-    }
-    .mt-5 {
-        color: #ffffff;
-        font-size: 15px;
-        width: 80%;
-    }
-
-    .mt-55 {
-        width: 100%;
-        font-size: 12px;
-    }
-    .btn-primary {
-        margin-bottom: 15px;
-    }
-    .btn-primary:hover {
-        color:#3f0e40;
-        background-color:#ffffff;
-        border-color:#ffffff;
-        margin-bottom: 15px;
-    }
-    
-}
+        /*  */
