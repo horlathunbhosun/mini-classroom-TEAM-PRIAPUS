@@ -39,9 +39,9 @@ body
 button {
     cursor: pointer;
     width: 200px;
-
+    border: none;
     background: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 15px;
     
     /* SIGN UP */
 
@@ -128,6 +128,6 @@ button {
     color: #3F0E40;
 }
 
-@media screen and (max-width: ) {
-    
+@media screen and (max-width: 578px) {
+
 }
