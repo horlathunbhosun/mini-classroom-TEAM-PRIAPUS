@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
 body
 {
     margin: 0;
@@ -5,12 +12,11 @@ body
     background: rgba(63, 14, 64, 0.93);
     font-size: 16px;
     color: #777;
-    font-family: sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-weight: 300;
 }
 #login-box {
     position: relative;
-    /* margin: 5% auto; */
     height: 400px;
 
 }
@@ -21,41 +27,22 @@ body
     width: 50%;
     height: 700px;
     box-sizing: border-box;
-    background: #FFFFFF;
-    border-radius: 20px;
+    background: rgba(63, 14, 64, 0.93);
     text-align: center;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
 }
-
-.reg {
+.welcome-section {
     text-align: center;
-    margin-top: 40%;
-    color: #ffffff;
+    margin-top: 28%;
+    color: #ffffff;   
 }
-
-h3 {
-    margin-bottom: -15px;
-}
-
-button {
-    cursor: pointer;
-    width: 200px;
-
-    background: #ffffff;
-    border-radius: 20px;
-    
-    /* SIGN UP */
-
-    text-align: center;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    /* line-height: 6px; */
+.mt-5 {
     color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 
 .right-box {
@@ -66,13 +53,12 @@ button {
     padding: 40px;
     width: 50%;
     height: 700px;
-    background: #3f0e40;
-    border-radius: 20px;
-    font-family: Montserrat; 
+    background: #fff;
+    font-family: 'Oxygen', sans-serif; 
 }
 
 .login-container {
-    margin-top: 5%;
+    margin-top: 15%;
 }
 
 .login-form{
@@ -80,8 +66,6 @@ button {
     width: 370px;
     padding: 15px;
     margin: auto;
-   
-
 }
 
 .form-control{
@@ -111,246 +95,43 @@ button {
 .login-form a:hover{
     color:#3F0E40;
 }
-
-.btn {
-    cursor: pointer;
-    /* width: 200px; */
-
-    background: #3f0e40;
-    border-radius: 20px;
-
+.signIn {
     text-align: center;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    
-    color: #ffffff;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    text-decoration: none;
+    border-color: #fff;
 }
 
-.mb-5 {
-    color: #3f0e40;
-}
-
-.btn-primary:hover {
-    color:#3f0e40;
-    background-color:#ffffff;
-    border-color:#ffffff;
-}
-
-
-
-
-@media (max-width: 900px) {
+/* mobile veiw */
+@media (max-width: 575.98px) {
+    body {
+        background-color: #3F0E40;
+    }
+    .right-box {
+        width: 100%;
+    }
+    .left-box {
+        display: none;
+    }
+    .right-box {
+        background: #3F0E40;
+    }
     .reg {
-        text-align: center;
-        margin-top:80%;
-        color: #ffffff;
-        font-size: 10px;
+        font-size: 25px;
+        padding-top: 20px;
     }
-    h3 {
-        font-size: 20px;
-        margin-bottom: -16px;
+    .login-form {
+        padding-bottom: 30%;
+        height: 100%;
+        width: 100%;
+        margin-top: 20px;
+        background: #fff;
+        border-radius: 8px;
     }
-    .mb-5 {
-        font-size: 20px;
-    }
-    button {
-        cursor: pointer;
-        width: 200px;
-    
-        background: #ffffff;
-        border-radius: 20px;
-        
-        /* SIGN UP */
-    
-        text-align: center;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        /* line-height: 6px; */
-        color: #ffffff;
-    }
-    
-    .login-container {
-        margin-top: 30%;
-    }
-    
-    .login-form{
-        max-width: 60%;
-        width: 300px;
-        padding: 15px;
-        margin: auto;
-       
-    
-    }
-    
-    .form-control{
-        font-size: 10px;
-        min-height: 48px;
-        font-weight: 500;
-    }
-    
-    .form-control:focus{
-        border-color:#3F0E40;
-        box-shadow: 0 0 0 0.2rem rgba(114,61,190,.25);
-    }
-    .form-check {
-        font-size: 10px;
-    }
-    .forgot-link{
-        font-size: 13px;
-    }
-    
-    .forgot-link label{
-        margin-bottom: 0;
-    }
-    
-    .login-form a{
-        text-decoration: none;
-        color: #666666;
-    }
-    
-    .login-form a:hover{
-        color:#3F0E40;
-    }
-    
-    .btn {
-        cursor: pointer;
-        /* width: 200px; */
-    
-        background: #3f0e40;
-        border-radius: 20px;
-    
-        text-align: center;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        
-        color: #ffffff;
-    }
-    
-    .mt-5 {
-        color: #ffffff;
-        font-size: 15px;
-        width: 70%;
-    }
-    .btn-primary {
-        margin-bottom: 15px;
-    }
-    .btn-primary:hover {
-        color:#3f0e40;
-        background-color:#ffffff;
-        border-color:#ffffff;
-        margin-bottom: 15px;
-    }
-}
 
-@media (max-width: 500px) {
-    .reg {
-        text-align: center;
-        margin-top:90%;
-        color: #ffffff;
-        font-size: 10px;
-    }
-    h3 {
-        font-size: 15px;
-        margin-bottom: -12px;
-    }
-    .mb-5 {
-        font-size: 15px;
-    }
-    button {
-        cursor: pointer;
-        width: 200px;
-    
-        background: #ffffff;
-        border-radius: 20px;
-        
-        /* SIGN UP */
-    
-        text-align: center;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        /* line-height: 6px; */
-        color: #ffffff;
-    }
-    
-    .login-container {
-        margin-top: 30%;
-    }
-    
-    .login-form{
-        max-width: 60%;
-        width: 300px;
-        padding: 15px;
-        margin: auto;
-       
-    
-    }
-    
-    .form-control{
-        font-size: 8px;
-        min-height: 48px;
-        font-weight: 500;
-    }
-    
-    .form-control:focus{
-        border-color:#3F0E40;
-        box-shadow: 0 0 0 0.2rem rgba(114,61,190,.25);
-    }
-    .form-check {
-        font-size: 10px;
-    }
-    .forgot-link{
-        font-size: 13px;
-    }
-    
-    .forgot-link label{
-        margin-bottom: 0;
-    }
-    
-    .login-form a{
-        text-decoration: none;
-        color: #666666;
-    }
-    
-    .login-form a:hover{
-        color:#3F0E40;
-    }
-    
-    .btn {
-        cursor: pointer;
-        /* width: 200px; */
-    
-        background: #3f0e40;
-        border-radius: 20px;
-    
-        text-align: center;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        
-        color: #ffffff;
-    }
-    
-    .mt-5 {
-        color: #ffffff;
-        font-size: 10px;
-        width: 70%;
-    }
-    .btn-primary {
-        margin-bottom: 15px;
-    }
-    .btn-primary:hover {
-        color:#3f0e40;
-        background-color:#ffffff;
-        border-color:#ffffff;
-        margin-bottom: 15px;
-    }
 }
