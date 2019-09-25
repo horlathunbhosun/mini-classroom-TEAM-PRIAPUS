@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title> Signup Form</title>   
+  <title> Signup Form </title>   
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/regstyle.css">
+    <link rel="stylesheet" type="text/css" href="regstyle.css">
 </head>
 <body>
   <div class="container-full" id="login-box">
@@ -23,7 +23,22 @@
             </div>
               <div class="form-group">
                       <input type="password" class="form-control rounded-pill form-control-lg" placeholder="password*" required>
-              </div>       
+              </div>   
+              <div class="form-group">
+                    <select name="state" class="form-control selectpicker" required>
+                            <option value="">--gender--</option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                            <option value="">Others</option>
+                          </select>
+            </div>    
+            <div class="form-group">
+                    <select name="state" class="form-control selectpicker" required>
+                            <option value="">--specify--</option>
+                            <option value="">Student</option>
+                            <option value="">Teacher</option>
+                          </select>
+            </div>
               <div class="forgot-link d-flex align-items-center justify-content-between">
                   <div class="form-check">
                       <input type="checkbox" class="form-check-input" id="remember">
