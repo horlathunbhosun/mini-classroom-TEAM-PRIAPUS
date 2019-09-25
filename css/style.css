@@ -29,35 +29,27 @@ body
     height: 700px;
     box-sizing: border-box;
     background: rgba(63, 14, 64, 0.93);
-    border-radius: 20px;
     text-align: center;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
 }
-
 .reg {
     text-align: center;
     margin-top: 40%;
-    color: #ffffff;
-    
+    color: #ffffff;   
 }
-
-
 button {
     cursor: pointer;
     width: 200px;
-
-    background: #FFFFF
-    border-radius: 20px;
-
+    border-radius: 8px;
     text-align: center;
-    font-family: Montserrat;
+    font-family: 'Oxygen', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    color: #3F0E40;
+    color: #fff;
 }
 
 .mt-5 {
@@ -88,8 +80,6 @@ button {
     width: 370px;
     padding: 15px;
     margin: auto;
-   
-
 }
 
 .form-control{
@@ -123,16 +113,11 @@ button {
 .btn {
     cursor: pointer;
     width: 200px;
-
     background: #3f0e40;
-    border-radius: 20px;
-
+    border-radius: 8px;
     text-align: center;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 700;
+    font-family: 'Oxygen', sans-serif;
     font-size: 20px;
-    
     color: #ffffff;
 }
 
@@ -146,7 +131,7 @@ button {
 .btn-primary:hover {
     color:#3f0e40;
     background-color:#ffffff;
-    border-color:#ffffff;
+    border-color: none;
     margin-bottom: 15px;
 }
 
