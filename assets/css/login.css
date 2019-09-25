@@ -119,7 +119,9 @@ button {
     font-weight: 700;
     font-size: 20px;
     color: #ffffff;
-    
+}
+.btn : hover{
+    color: #ffffff;
 }
 .mb-5 {
     color: #3F0E40;
