@@ -13,6 +13,7 @@ PS:- the branch name should be meaningful
 5. After commiting your changes, push to the current branch using  
 ```git push origin HEAD``` or 
 ```git push origin "the branch you're currently in"```
-6. Make your pull request.
+6. Make your pull request. ```SIMPLE```
+
 
 # HAPPY CODING!
