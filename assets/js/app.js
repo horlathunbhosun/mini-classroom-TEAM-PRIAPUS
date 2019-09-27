@@ -1,9 +1,4 @@
-/**
- *  Document   : app.js
- *  Author     : redstar
- *  Description: Core script to handle the entire theme and core functions
- *
- **/
+
 var App = function() {
 
     // IE mode
