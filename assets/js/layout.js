@@ -1,9 +1,4 @@
-/**
- *  Document   : layout.js
- *  Author     : redstar
- *  Description: Core script to handle the entire theme and core functions
- *
- **/
+
 var Layout = function () {
 
     var layoutImgPath = 'img/';

@@ -162,6 +162,9 @@ ul{
     border-color: #521652;
     color: #521652;
 }
+.mfp-hide {
+    display: none !important;
+}
 .btn-default{
     color: #fff;
     background-color: transparent;
@@ -215,7 +218,7 @@ ul{
     margin-right: 5px;
 }
 .home{
-    background: url(../img/home-bg.jpg) no-repeat scroll  center center;
+    background: url(../img/classroom.jpg) no-repeat scroll  center center;
     background-size: cover;
     position: relative;
     padding-top: 300px;
