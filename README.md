@@ -2,13 +2,13 @@
 
 # TASK'S DESCRIPTION
 
-1.  A simple class app that allows user create classes, add items to the class, and allows students access the classes.
-2.  Teacher sign up page.
-3.  Teacher sign in page.
-4.  Teacher create clas.
-5.  Teacher add items to class.
-6.  Student sign up for specific class.
-7.  Student access items in that class.
+-   A simple class app that allows user create classes, add items to the class, and allows students access the classes.
+-   Teacher sign up page.
+-   Teacher sign in page.
+-   Teacher create clas.
+-   Teacher add items to class.
+-   Student sign up for specific class.
+-   Student access items in that class.
 
 
 # HOW TO CONTRIBUTE
