@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+html,
+body {
+    background-color: #a9d7d1;
+    text-align: left;
+    align-content: center;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    padding-bottom: 10px;
+    background-image: url("depositphotos_104190032-stock-photo-office-working-table.jpg");
+    color: rgb(68, 68, 68);
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.999;
+
+}
+
+#dropdown,
+#dropdown2,
+#area {
+    width: 240px;
+    margin-left: 15px;
+}
+
+#age {
+    width: 12vw;
+}
+
+#first_name,
+#email,
+#dropdown {
+    width: 30vw;
+}
+
+#area {
+    width: 250px;
+    height: 100px;
+}
+
+#custom{
+    width: 30%;
+}
+
+/*For ScreenWidth Above 576px implemnet the MediaQueryBelow*/
+
+@media (min-width: 576px) {
+    .col-sm-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+label#name {
+    text-align: right;
+}
+
+label#ageMove {
+    text-align: right;
+}
+
+label#email2 {
+    text-align: right;
+}
+
+label.col-form-label.col-sm-4 {
+    text-align: right;
+}
+
+label.col-form-label {
+    text-align: right;
+}
+
+
+/*For ScreenWidth Below 576px implemnet the MediaQueryBelow*/
+
+@media (max-width: 576px) {
+    .col-sm-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 66.6666%;
+        min-width: 33.333333%;
+    }
+
+    label#name {
+        text-align: left;
+    }
+
+    label#ageMove {
+        text-align: left;
+    }
+
+    label#email2 {
+        text-align: left;
+    }
+
+    label.col-form-label.col-sm-4 {
+        text-align: left;
+    }
+
+    label.col-form-label {
+        text-align: left;
+    }
+
+    #first_name,
+    #email,
+    #dropdown {
+        width: 40vw;
+    }
+
+    #age {
+        width: 15vw;
+    }
+}
+
+button.btn {
+    font-size: 16px;
+}
+
+#description {
+    font-weight: 500;
+}
