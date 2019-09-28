@@ -1,7 +1,18 @@
 # Mini-classroom (TEAM PRIAPUS)
 
+# TASK'S DESCRIPTION
+
+-   A simple class app that allows user create classes, add items to the class, and allows students access the classes.
+-   Teacher sign up page.
+-   Teacher sign in page.
+-   Teacher create clas.
+-   Teacher add items to class.
+-   Student sign up for specific class.
+-   Student access items in that class.
+
 
 # HOW TO CONTRIBUTE
+
 1. Fork the repository.
 2. Clone the repository using 
     ```git clone```
@@ -13,6 +24,7 @@ PS:- the branch name should be meaningful
 5. After commiting your changes, push to the current branch using  
 ```git push origin HEAD``` or 
 ```git push origin "the branch you're currently in"```
-6. Make your pull request.
+6. Make your pull request. ```SIMPLE```
+
 
 # HAPPY CODING!
