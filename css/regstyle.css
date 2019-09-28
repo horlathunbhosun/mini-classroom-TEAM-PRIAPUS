@@ -95,9 +95,6 @@ body
 .login-form a:hover{
     color:#3F0E40;
 }
-.signup-form {
-    margin-top: -12%;
-}
 .signIn {
     text-align: center;
 }
@@ -116,7 +113,6 @@ a:hover {
     border: none;
     height: 37px;
     width: 38%;
-    margin-left: -5%;
 }
 
 /* mobile veiw */
@@ -138,29 +134,11 @@ a:hover {
         padding-top: 20px;
     }
     .signup-form {
-        margin-top: -15%;
-        height: 570px;
+        height: 70%;
         width: 100%;
-        margin-bottom: 10%;
+        margin-bottom: 20%;
         background: #fff;
-        border-radius: 8px;
         padding-bottom: 20%;
     }
 
-    .form-control {
-        width: 340px;
-        margin-left: 8%;
-    }
-    button[type="submit"].btn {
-        margin-top: -20px;
-    }
-    label {
-        margin-right: 20px;
-    }
-    .form-check {
-        margin-left: 3px;
-    }
-    .forgot-link .form-check input[type="checkbox"] {
-        margin-left: 0px;
-    }
 }

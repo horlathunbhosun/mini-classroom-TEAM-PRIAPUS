@@ -110,9 +110,6 @@ a:hover {
     text-decoration: none;
     border-color: #fff;
 }
-p .mb-3 {
-    text-align: center;
-}
 
 /* mobile veiw */
 @media (max-width: 575.98px) {
@@ -134,7 +131,7 @@ p .mb-3 {
     }
     .login-form {
         padding-bottom: 30%;
-        height: 400px;
+        height: 100%;
         width: 100%;
         margin-top: 20px;
         background: #fff;

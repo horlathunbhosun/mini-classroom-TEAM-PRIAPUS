@@ -36,156 +36,63 @@
     </nav>
 
     <!--Form Layout-->
-    <h1 id="title" class="display-4 text-center" style="color:rgb(236, 76, 13);">Teacher Sign-In Form</h1>
+    <h1 id="title" class="display-4 text-center" style="color:rgb(236, 76, 13);">Teacher Sign-Up Form</h1>
 
 
     <div class="container center-block text-dark">
 
-        <form action="/html/tags/html_form_tag_action.cfm" role="form" id="survey-form" class="bg-light rounded p-4">
+        <form role="form" id="survey-form" class="bg-light rounded p-4" action="tsignup.php" method="post">
 
 
-            <p id="description" class="text-center pt-2 pb-2">Please Sign In Here</p>
+            <p id="description" class="text-center pt-2 pb-2">Please Sign Up Here</p>
             <!--Input Section-->
 
             <div class="form-group row">
 
-                <label for="first_name" class="col-sm-4 col-form-label" id="name">* First Name:</label>
+                <label class="col-sm-4 col-form-label" id="name">* First Name:</label>
 
                 <div class="col-sm-6">
-                    <input type="text" class="form-control form-control-sm" id="first_name" id="name-label" name="name"
+                    <input type="text" class="form-control form-control-sm" id="first_name" id="name-label" name="fname"
                         placeholder="Enter First Name" required>
                 </div>
             </div>
             <div class="form-group row">
 
-                <label for="first_name" class="col-sm-4 col-form-label" id="name">* Last Name:</label>
+                <label class="col-sm-4 col-form-label" id="name">* Last Name:</label>
 
                 <div class="col-sm-6">
-                    <input type="text" class="form-control form-control-sm" id="first_name" id="name-label" name="name"
+                    <input type="text" class="form-control form-control-sm" id="first_name" id="name-label" name="lname"
                         placeholder="Enter Last Name" required>
                 </div>
             </div>
 
             <div class="form-group row">
-                <label for="last_name" class="col-sm-4 col-form-label" id="email2">* Email:</label>
+                <label  class="col-sm-4 col-form-label" id="email2">* Email:</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control form-control-sm" id="email" id="email-label" name="email"
                         placeholder="Enter your Email" required>
                 </div>
             </div>
-
             <div class="form-group row">
-                <label for="date" class="col-sm-4 col-form-label" id="ageMove"><i class="fa fa-calendar"
-                        aria-hidden="true"></i> Joining Date:</label>
+                <label  class="col-sm-4 col-form-label" id="email2">* Password:</label>
                 <div class="col-sm-6">
-                    <input type="date" class="form-control form-control-sm" id="age" name="date"
-                        placeholder="Start date" required>
-                </div>
-            </div>
-            <!--Password Section-->
-            <div class="form-group row">
-                <label for="password" class="col-sm-4 col-form-label" id="email2">* Password:</label>
-                <div class="col-sm-6">
-                    <input type="password" class="form-control form-control-sm" id="email" id="email-label" name="password"
+                    <input type="password" class="form-control form-control-sm" id="email" id="email-label" name="pass"
                         placeholder="Enter your password" required>
                 </div>
             </div>
 
             <div class="form-group row">
-                <label for="password" class="col-sm-4 col-form-label" id="email2">* Confirm Password:</label>
+                <label  class="col-sm-4 col-form-label" id="email2">* Confirm Password:</label>
                 <div class="col-sm-6">
-                    <input type="password" class="form-control form-control-sm" id="email" id="email-label" name="password"
+                    <input type="password" class="form-control form-control-sm" id="email" id="email-label" name="cpass"
                         placeholder="Confirm Password" required>
                 </div>
             </div>
-            <!--INPUT SEC. END-->
-
-            <!--SELECT SECTION START-->
-            <div class="form-group row">
-
-                <label for="dropdown" class="col-form-label col-sm-4">* Departments</label>
-
-                <select class="form-control form-control-sm col-sm-4 mr-2 mt-2" id="dropdown">
-                    <option id="dropdown" disabled>Select An Option</option>
-                    <option>Student</option>
-                    <option>Full Time Job</option>
-                    <option>Full Time Learner</option>
-                    <option>Prefer Not To Say</option>
-                    <option>Other</option>
-                </select>
-
-            </div>
-            <!--SELECT SEC. END-->
-
-             <!--SELECT GENDER SECTION START-->
-             <div class="form-group row">
-                 <label for="dropdown" class="col-form-label col-sm-4">* Gender</label>
-                    <select class="form-control form-control-sm col-sm-4 mr-2 mt-2" id="dropdown">
-                        <option id="dropdown" disabled>Select An Option</option>
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Prefer Not To Say</option>
-                    </select>
-             </div>
-             <!--SELECT SEC. END-->
-
-             <!--MOBILE NUMBER INPUT-->
-             <div class="form-group row">
-
-                 <label for="mobile-number" class="col-sm-4 col-form-label" id="name">* Mobile:</label>
-
-                 <div class="col-sm-6">
-                     <input type="text" class="form-control form-control-sm" id="first_name" id="name-label" name="mobile"
-                         placeholder="Input Mobile Number" required>
-                 </div>
-             </div>
-             <!--MOBILE NUMBER INPUT END-->
-
-             <!--DOB-->
-             <div class="form-group row">
-                 <label for="date" class="col-sm-4 col-form-label" id="ageMove"><i class="fa fa-calendar"
-                         aria-hidden="true"></i> Date-Of-Birth:</label>
-                 <div class="col-sm-6">
-                     <input type="date" class="form-control form-control-sm" id="age" name="date"
-                         placeholder="Birth Date" required>
-                 </div>
-             </div>
-             <!--DOB END-->
-
-
-             <!--ADDRESS SECTION-->
-             
-             <div class="form-group row justify-content-left">
-                 <label for="comment" class="col-form-label col-sm-4">Address :</label>
-
-                 <textarea class="col-sm-6 form-control form-control-sm text-muted" id="area" placeholder="Enter your Address here. . ."></textarea>
-
-             </div>
-
-             <!--ADDRESS SECTION END-->
-
-             <!--PROFILE PIC SECTION-->
-             <div class="form-group row">
-                <label for="first_name" class="col-sm-4" id="name">Profile Picture :</label>
-                 <div class="col-sm-6">
-                     <input type="file" class="" id="first_name" id="name-label" name="filename" required>
-                 </div>
-             </div>
-             <!--PROFILE PIC SEC. END-->
-
-             <!-- EDUCATION SEC-->
-             <div class="form-group row justify-content-left">
-                 <label for="comment" class="col-form-label col-sm-4">Enter Bio :</label>
-
-                 <textarea class="col-sm-6 form-control form-control-sm text-muted" id="area" rows="4" cols="50" placeholder="Describe yourself here..."></textarea>
-
-             </div>
-
-    
-            <!--BUTTON SUBMIT-->
+        
             <div class="form-group row justify-content-center">
                 <div class="offset-4 col-sm-8">
-                    <button type="submit" id="submit" class="btn btn-danger btn-sm p-2 mb-2">Submit</button>
+                    <!-- <button type="submit" id="submit" name="submit" class="btn btn-danger btn-sm p-2 mb-2">Submit</button> -->
+                    <input type="submit" name="submit" class="btn btn-danger btn-sm p-2 mb-2">
                 </div>
             </div>
 
