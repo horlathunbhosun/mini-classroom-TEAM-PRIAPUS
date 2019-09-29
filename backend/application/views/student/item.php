@@ -17,7 +17,7 @@
                             </div>
                             <ol class="breadcrumb page-breadcrumb pull-right">
                                 <li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
-                                        href="dashboard.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+                                        href="">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
                                 </li>
                                 <li><a class="parent-item" href="">Item</a>&nbsp;<i class="fa fa-angle-right"></i>
                                 </li>
@@ -49,6 +49,7 @@
                                                     
                                                     <th width="50%"> Item Name</th>
                                                     <th> Item Content</th>
+                                                    <th> File </th>
                                                     
                                                     
                                                 </tr>
@@ -58,26 +59,55 @@
                                                 <tr class="odd gradeX">
                                                    
                                                     
-                                                    
-                                                    <td></td>
-                                                    <td>
+                                                    <?php foreach($student as $key => $student):?>
+                                                    <td><?= $student->item_name ?></td>
+                                                    <td><?= substr($student->item_content,0, 500)?>
                                                     <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                                                                 Read More
                                                     </a>
 
                                                     </td>
+                                                    <?php if (empty($student->file)): ?>
+                                                        ''
+                                        
+                                                        <?php else: ?>
+                                                    <td> 
+                                         <a href="<?= base_url() ?>public/assets/img/<?= $student->file ?>" target="_blank">
+                                                                Download</a></td>
+                                                    <?php endif ?>
+                                                   
+                                                    <?php endforeach;?>
                                                 </tr>
                                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                <h5 class="modal-title" id="exampleModalLabel"><?= $student->item_name ?></h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                            
+                                                <?=$student->item_content;?>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+
+                                         <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel"><?= $student->item_name ?></h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -115,6 +115,16 @@ public function item_list(){
   $this->load->view('teacher/itemlist', $data);
   $this->load->view('teacher/footer');
 }  
+
+  public function delete_item($id){
+         $deleted = $this->model_deletevalues->deletestuff('item','id',$id);
+       if ($deleted) {
+          $this->session->set_flashdata("success",'<div class="alert alert-success >
+              <strong>Good!</strong> Item Deleted Successfully
+            </div>');
+            redirect("index.php/teacher_es/item_list");
+       }
+    }
   
   public function limit_word($input,$num)
   {

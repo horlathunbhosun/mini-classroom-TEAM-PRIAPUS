@@ -20,13 +20,11 @@ class Student_es extends CI_Controller {
 
  public function index()
     {
-        // $date = date('Y-m-d');
         $this->load->view('student/header');
         $this->load->view('student/nav');
         $this->load->view('student/aside');
 
         $data['user'] = $this->model_getvalues->getDetails('student','name',$this->session->userdata('name'));
-   
         $this->load->view('student/dashboard',$data);
         $this->load->view('student/footer');
     }
@@ -35,9 +33,11 @@ public function item_list(){
   $this->load->view('student/header');
   $this->load->view('student/nav');
   $this->load->view('student/aside');
-//   $data['item'] = $this->model_getvalues->getTableRows('item','teacher_id =',$this->session->userdata('id'),'id');
+  $data['user'] = $this->model_getvalues->getDetails('student','id',$this->session->userdata('id'));
+  $data['student'] = $this->model_getvalues->getTableRows('item','class_id',$data['user']['class_id'], 'id');
 
-  $this->load->view('student/item');
+
+  $this->load->view('student/item', $data);
   $this->load->view('student/footer');
 }  
   
