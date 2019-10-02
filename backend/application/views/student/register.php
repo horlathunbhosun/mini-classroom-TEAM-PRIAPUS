@@ -45,16 +45,17 @@
           <input type="password" name="passconf" class="form-control form control-lg" placeholder="Comfirm Password">
         </div>
         <div class="form-group">
-          <select name="class" class="form-control selectpicker" required>
+          <select name="class[]" multiple="multiple" class="form-control selectpicker" required>
             <option value="">&mdash;Select Your Class &mdash;</option>
             <?php foreach($class as $key => $class):?>
-            <option value="<?= $class->class_name;?>"><?= $class->class_name;?></option>
+            <option value="<?= $class->id;?>"><?= $class->class_name;?></option>
             <?php endforeach;?>
           </select>
+          <small>Press the control key and select multiple classes</small>
         </div>
         <div class="forgot-link d-flex align-items-center justify-content-between">
           <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="remember">
+            <input type="checkbox" required class="form-check-input" id="remember">
             <label for="remember">By clicking the signup button below you accept our terms and coditions!</label>
           </div>
         </div> <br>

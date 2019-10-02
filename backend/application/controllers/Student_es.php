@@ -20,6 +20,7 @@ class Student_es extends CI_Controller {
 
  public function index()
     {
+        // $date = date('Y-m-d');
         $this->load->view('student/header');
         $this->load->view('student/nav');
         $this->load->view('student/aside');
@@ -30,12 +31,25 @@ class Student_es extends CI_Controller {
     }
 
 public function item_list(){
+
   $this->load->view('student/header');
   $this->load->view('student/nav');
   $this->load->view('student/aside');
-  $data['user'] = $this->model_getvalues->getDetails('student','id',$this->session->userdata('id'));
-  $data['student'] = $this->model_getvalues->getTableRows('item','class_id',$data['user']['class_id'], 'id');
 
+  $data['user'] = $this->model_getvalues->getDetails('student','id',$this->session->userdata('id'));
+  $class = explode(',',$data['user']['class_id']);
+  $student = array();
+  foreach($class as $classs){
+       $this->db->where('class_id =',trim($classs));
+          $query = $this->db->get('item'); 
+
+          $student[] = $query->result();
+    // $data['student'] = $this->model_getvalues->getTableRows('item', 'class_id',$classs, 'id','desc');
+  }
+
+//   print_r($student[0]); die();
+  $data['stu'] = $student;
+//   $data['st'] = $data['stu'];
 
   $this->load->view('student/item', $data);
   $this->load->view('student/footer');
