@@ -51,7 +51,7 @@
             <option value="<?= $class->id;?>"><?= $class->class_name;?></option>
             <?php endforeach;?>
           </select>
-          <small>Press the control key and select multiple classes</small>
+          <small>Press the control or Cmd key and select multiple classes</small>
         </div>
         <div class="forgot-link d-flex align-items-center justify-content-between">
           <div class="form-check">
