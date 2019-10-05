@@ -17,9 +17,15 @@
                             </div>
                             <ol class="breadcrumb page-breadcrumb pull-right">
                                 <li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
+<<<<<<< HEAD
                                         href="dashboard.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
                                 </li>
                                 <li><a class="parent-item" href="">Item</a>&nbsp;<i class="fa fa-angle-right"></i>
+=======
+                                        href="#">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+                                </li>
+                                <li><a class="parent-item" href="#">Item</a>&nbsp;<i class="fa fa-angle-right"></i>
+>>>>>>> backend
                                 </li>
                                 <li class="active">List Items</li>
                             </ol>
@@ -49,6 +55,10 @@
                                                     
                                                     <th width="50%"> Item Name</th>
                                                     <th> Item Content</th>
+<<<<<<< HEAD
+=======
+                                                    <th> File </th>
+>>>>>>> backend
                                                     
                                                     
                                                 </tr>
@@ -58,26 +68,55 @@
                                                 <tr class="odd gradeX">
                                                    
                                                     
+<<<<<<< HEAD
                                                     
                                                     <td></td>
                                                     <td>
+=======
+                                                    <?php 
+                                                        // print_r(); die();
+                                                    foreach($stu as $student):?>
+                                                                
+                                                    <td><?= $student[0]->item_name ?></td>
+                                                    <td><?= substr($student[0]->item_content,0, 500)?>
+>>>>>>> backend
                                                     <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                                                                 Read More
                                                     </a>
 
                                                     </td>
+<<<<<<< HEAD
+=======
+                                                    <?php if (empty($student[0]->file)): ?>
+                                                        ''
+                                        
+                                                        <?php else: ?>
+                                                    <td> 
+                                         <a href="<?= base_url() ?>public/assets/img/<?= $student[0]->file ?>" target="_blank">
+                                                                Download</a></td>
+                                                    <?php endif ?>
+                                                   
+>>>>>>> backend
                                                 </tr>
                                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
                                             <div class="modal-header">
+<<<<<<< HEAD
                                                 <h5 class="modal-title" id="exampleModalLabel"></h5>
+=======
+                                                <h5 class="modal-title" id="exampleModalLabel"><?= $student[0]->item_name ?></h5>
+>>>>>>> backend
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
                                             <div class="modal-body">
+<<<<<<< HEAD
                                             
+=======
+                                                <?=$student[0]->item_content;?>
+>>>>>>> backend
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -85,6 +124,12 @@
                                             </div>
                                         </div>
                                         </div>
+<<<<<<< HEAD
+=======
+
+                                                                                <?php endforeach;?>
+
+>>>>>>> backend
                                              
                                             </tbody>
                                         </table>

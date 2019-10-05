@@ -27,7 +27,36 @@ class Teacher_es extends CI_Controller {
         $this->load->view('teacher/dashboard',$data);
         $this->load->view('teacher/footer');
     }
+public function message(){
+        $this->load->view('teacher/header');
+        $this->load->view('teacher/nav');
+        $this->load->view('teacher/aside');
+        if (isset($_POST['submit'])) {
+          $this->form_validation->set_rules('title','Message Name','required');
+          $this->form_validation->set_rules('message','Message','required');
+         
+             if ($this->form_validation->run() == TRUE) {
+                $arr = array(
+                    'title'=> $this->input->post('title'),
 
+                    'message'=> $this->input->post('message'),
+             );
+            $confirm = $this->model_insertvalues->addItem($arr,"notify");
+         if ($confirm)
+                    {
+            $this->session->set_flashdata("success",'<div class="alert alert-success"><strong>Well done!</strong> Message added Successfully. </div>');
+                redirect("index.php/teacher_es/message");
+                    }
+            else{
+                 $this->session->set_flashdata("error",'<div class="alert alert-danger "><strong>Oh snap!</strong> Change a few things up and try                        submitting again. </div>');
+                redirect("index.php/teacher_es/message","refresh");
+                }
+          }
+    }
+
+        $this->load->view('teacher/noti');
+        $this->load->view('teacher/footer');
+}
 
 public function add_class()
 {
@@ -72,7 +101,22 @@ public function all_class(){
   $data['list'] = $this->model_getvalues->getTableRows('class','teacher_id',$this->session->userdata('id'),'id');
   $this->load->view('teacher/classlist', $data);
   $this->load->view('teacher/footer');
-   }
+}
+
+public function students(){
+  $this->load->view('teacher/header');
+  $this->load->view('teacher/nav');
+  $this->load->view('teacher/aside');
+  $data['list'] = $this->model_getvalues->getAll('student');
+  $this->load->view('teacher/studentlist', $data);
+  $this->load->view('teacher/footer');
+}
+
+public function students_classes($class_id){
+  $class_ids = explode('-', $class_id);
+  $classes = $this->model_getvalues->getColumnByArray('class', 'class_name', 'id', $class_ids);
+  echo json_encode($classes);
+}
 
 public function add_item(){
     $this->load->view('teacher/header');
@@ -115,6 +159,16 @@ public function item_list(){
   $this->load->view('teacher/itemlist', $data);
   $this->load->view('teacher/footer');
 }  
+
+  public function delete_item($id){
+         $deleted = $this->model_deletevalues->deletestuff('item','id',$id);
+       if ($deleted) {
+          $this->session->set_flashdata("success",'<div class="alert alert-success >
+              <strong>Good!</strong> Item Deleted Successfully
+            </div>');
+            redirect("index.php/teacher_es/item_list");
+       }
+    }
   
   public function limit_word($input,$num)
   {

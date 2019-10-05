@@ -137,6 +137,21 @@ class Model_getvalues extends CI_Model {
         return $query->row_array();
     }
 
+    function getAll($table) {
+        $this->db->select('*');
+        $this->db->from($table);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    function getColumnByArray($table, $col, $whereField, $whereValue) {
+        $this->db->select($col);
+        $this->db->from($table);
+        $this->db->where_in($whereField, $whereValue);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
 }
 
 ?>

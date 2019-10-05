@@ -45,6 +45,7 @@
           <input type="password" name="passconf" class="form-control form control-lg" placeholder="Comfirm Password">
         </div>
         <div class="form-group">
+<<<<<<< HEAD
           <select name="class" class="form-control selectpicker" required>
             <option value="">&mdash;Select Your Class &mdash;</option>
             <?php foreach($class as $key => $class):?>
@@ -55,6 +56,19 @@
         <div class="forgot-link d-flex align-items-center justify-content-between">
           <div class="form-check">
             <input type="checkbox" class="form-check-input" id="remember">
+=======
+          <select name="class[]" multiple="multiple" class="form-control selectpicker" required>
+            <option value="">&mdash;Select Your Class &mdash;</option>
+            <?php foreach($class as $key => $class):?>
+            <option value="<?= $class->id;?>"><?= $class->class_name;?></option>
+            <?php endforeach;?>
+          </select>
+          <small>Press the control or Cmd key and select multiple classes</small>
+        </div>
+        <div class="forgot-link d-flex align-items-center justify-content-between">
+          <div class="form-check">
+            <input type="checkbox" required class="form-check-input" id="remember">
+>>>>>>> backend
             <label for="remember">By clicking the signup button below you accept our terms and coditions!</label>
           </div>
         </div> <br>
@@ -65,4 +79,8 @@
     </div>
   </div>  
 </body>    
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> backend
